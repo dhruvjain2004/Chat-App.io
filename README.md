@@ -35,14 +35,14 @@ chat-app/
 │
 └── README.md
 #🌐 Usage
-Open your browser and go to http://localhost:3000.
+Open your browser and go to http://localhost:5173.
 
 Enter your name and room name to join.
 
 Start chatting in real-time!
 
 # 📸 Screenshots
-Add some screenshots here by dragging or linking image files.
+(./28.png)
 
 # 📦 Deployment
 You can deploy this app using services like:
