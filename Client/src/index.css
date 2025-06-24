@@ -1,0 +1,112 @@
+body{
+  background-color: black;
+  color: white;
+}
+
+.join_room{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.join_room input{
+  height: 35px;
+  width: 300px;
+  background-color: black;
+  color: white;
+  border: 2px solid yellow;
+}
+.join_room input::placeholder{
+  font-weight: bolder;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.join_room button{
+    height: 40px;
+  width: 310px;
+  font-weight: bolder;
+  font-size: 1.2rem;
+background-color: rgb(20, 20, 178);
+color: white;
+border: 1px solid yellow;
+
+}
+
+.chat_container{
+  height: 600px;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  /* background-color: yellow; */
+}
+
+.chat_box{
+  background-color: rgb(61, 61, 49);
+  height: 500px;
+  position: relative;
+  border: 1px solid yellow;
+}
+
+.chat_body{
+  position: absolute;
+  bottom: 0;
+}
+
+.chat_body input{
+  height: 40px;
+  width: 350px;
+  border: 1px solid yellow;
+}
+
+.chat_body input::placeholder{
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+.chat_body button{
+  height: 46px;
+  padding: 10px;
+  width: 42px;
+  background-color: rgb(127, 19, 229);
+  color: white;
+}
+
+.message_content{
+  display: flex;
+  line-height: 0;
+  margin: 10px;
+  font-weight: bolder;
+}
+
+ #you{
+  justify-content: flex-start;
+}
+#y{
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 5%;
+  color: black;
+}
+
+ #other{
+  justify-content: flex-end;
+}
+#b{
+  background-color: blue;
+  padding: 10px;
+  border-radius: 5%;
+}
+.msg_detail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.auto-scrolling-div::-webkit-scrollbar{
+  display: none;
+}
