@@ -42,7 +42,7 @@ Enter your name and room name to join.
 Start chatting in real-time!
 
 # 📸 Screenshots
-(./28.png)
+Interface - (./28.png)
 
 # 📦 Deployment
 You can deploy this app using services like:
