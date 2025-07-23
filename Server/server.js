@@ -8,8 +8,11 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
-    methods: ["GET", "PUT"],
+    origin: [
+      "http://localhost:5173",
+      "https://your-vercel-app-url.vercel.app"
+    ],
+    methods: ["GET", "POST", "PUT"],
   },
 });
 
@@ -31,7 +34,12 @@ io.on("connection",(socket)=>{console.log(socket.id)
 
 
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://your-vercel-app-url.vercel.app"
+  ]
+}));
 
 
-server.listen(1000,()=>console.log("Server is running on port 1000"));
+server.listen(process.env.PORT || 1000,()=>console.log("Server is running on port", process.env.PORT || 1000));
