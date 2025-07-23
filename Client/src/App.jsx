@@ -4,7 +4,7 @@ import { Chat } from './Chat'
 import music from './mixkit-tile-game-reveal-960.wav';
 
 
-const socket = io.connect("https://chat-app-io-1.onrender.com/")
+const socket = io.connect("https://chat-app-io-1.onrender.com")
 
 
 const App = () => {

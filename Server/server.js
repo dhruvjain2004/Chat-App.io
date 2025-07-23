@@ -10,7 +10,7 @@ const io = new Server(server, {
   cors: {
     origin: [
       "http://localhost:5173",
-      "https://your-vercel-app-url.vercel.app"
+      "https://chat-app-io-three.vercel.app"
     ],
     methods: ["GET", "POST", "PUT"],
   },
@@ -37,7 +37,7 @@ io.on("connection",(socket)=>{console.log(socket.id)
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://your-vercel-app-url.vercel.app"
+    "https://chat-app-io-three.vercel.app"
   ]
 }));
 
